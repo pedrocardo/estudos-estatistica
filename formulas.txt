@@ -1,0 +1,167 @@
+axioma-funcao-probabilidade-1
+P(A)\geq 0
+
+axioma-funcao-probabilidade-2
+P(\Omega)=1
+
+axioma-funcao-probabilidade-3
+P\left(\bigcup\limits_{i=1}^{\infty}A_{i}\right)=\sum_{i=1}^{\infty}P(A_i)
+
+definicao-complemento-evento
+A^c=\{\omega\in\Omega:\omega\notin A\}
+
+definicao-eventos-mutualmente-excludentes
+A\cap B=\emptyset
+
+definicao-interseccao-eventos
+A\cap B=\{\omega\in\Omega:\omega\in A\wedge\omega\in B\}
+
+definicao-uniao-eventos
+A\cup B=\{\omega\in\Omega:\omega\in A\vee\omega\in B\}
+
+definicao-variavel-aleatoria
+X:\Omega\rightarrow\mathbb{R}
+
+formula-amplitude-interquartil
+AIQ=Q_{3}-Q_{1}
+
+formula-amplitude
+A=x_{max}-x_{min}
+
+formula-coefieciente-correlacao-pearson-amostral
+r(x, y)=\frac{Cov(x, y)}{s_{x}\cdot s_{y}}
+
+formula-coefieciente-correlacao-pearson-populacional
+\rho(X, Y)=\frac{Cov(X, Y)}{\sigma_{X} \cdot \sigma_{Y}}
+
+formula-covariancia-amostral
+Cov(x, y)=\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})\cdot(y_{i}-\bar{y})}{n-1}
+
+formula-covariancia-populacional
+Cov(X, Y)=\frac{\sum_{i=1}^{N}(X_{i}-\bar{X})\cdot(Y_{i}-\bar{Y})}{N}
+
+formula-desvio-padrao-amostral
+s=\sqrt{s^2}
+
+formula-desvio-padrao-populacional
+\sigma=\sqrt{\sigma^2}
+
+formula-erro-padrao-media-amostral
+SE_{\bar{x}}=\frac{s}{\sqrt{n}}
+
+formula-estatistica-teste-t-student-duas-amostras-independentes-1
+t=\frac{(\bar x_{1}-\bar x_{2})}{s_{p}\cdot\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}}
+
+formula-estatistica-teste-t-student-duas-amostras-independentes-2
+s_{p}=\sqrt\frac{(n_{1}-1)\cdot s_{1}^2+(n_{2}-1)\cdot s_{2}^2}{n_{1}+n_{2}-2}
+
+formula-estatistica-teste-t-student-uma-amostra
+t=\frac{\bar x-\mu_{0}}{s/\sqrt n}
+
+formula-estatistica-teste-t-welch
+t=\frac{(\bar x_{1}-\bar x_{2})}{\sqrt{\frac{s_{1}^2}{n_{1}}+\frac{s_{2}^2}{n_{2}}}}
+
+formula-graus-liberdade-teste-t-de-welch
+v=\frac{\left (\frac{s_{1}^2}{n_{1}}+\frac{s_{2}^2}{n_{2}}\right )^2}{\frac{(s_{1}^2/n_{1})^2}{n_{1}-1}+\frac{(s_{2}^2/n_{2})^2}{n_{2}-1}}
+
+formula-graus-liberdade-teste-t-student-duas-amostras-independentes
+v=n_{1}+n_{2}-2
+
+formula-graus-liberdade-teste-t-student-uma-amostra
+v=n-1
+
+formula-media-aritmetica-ponderada-amostral
+\bar{x}_{p}=\frac{\sum_{i=1}^{n}x_{i}\cdot p_{i}}{\sum_{i=1}^{n} p_{i}}
+
+formula-media-aritmetica-ponderada-populacional
+\mu_{p}=\frac{\sum_{i=1}^{N}X_{i}\cdot p_{i}}{\sum_{i=1}^{N} p_{i}}
+
+formula-media-aritmetica-simples-amostral
+\bar{x}=\frac{\sum_{i=1}^{n} x_{i}}{n}
+
+formula-media-aritmetica-simples-populacional
+\mu=\frac{\sum_{i=1}^{N} X_{i}}{N}
+
+formula-posicao-decis
+Pos(D_{i})=\left(\frac{n \cdot i}{10}\right)+\frac{1}{2}
+
+formula-posicao-percentis
+Pos(P_{i})=\left(\frac{n \cdot i}{100}\right)+\frac{1}{2}
+
+formula-posicao-quartis
+Pos(Q_{i})=\left(\frac{n \cdot i}{4}\right)+\frac{1}{2}
+
+formula-probabilidade-ocorrencia-evento
+p(evento)=\frac{n\acute{u}mero\;de\;resultados\;do\;evento}{n\acute{u}mero\;de\;resultados\;do\;espa\c{c}o\;amostral}
+
+formula-variancia-amostral
+s^2=\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}{n-1}
+
+formula-variancia-populacional
+\sigma^2=\frac{\sum_{i=1}^{N}(X_{i}-\mu)^2}{N}
+
+formula-zscore-amostral
+Z_{i}=\frac{x_{i}-\bar_{x}}{s}
+
+formula-zscore-populacional
+Z_{i}=\frac{X_{i}-\mu}{\sigma}
+
+funcao-densidade-probabilidade-variavel-aleatoria-continua
+f(x)=P(a\leq x\leq b)=\int_a^b f(x)dx
+
+funcao-densidade-probabilidade-variavel-aleatoria-distribuicao-f-snedecor
+f(x)=P(X=x)=\frac{\Gamma\left(\frac{v_{1}+v_{2}}{2}\right)}{\Gamma\left(\frac{v_{1}}{2}\right)\cdot\Gamma\left(\frac{v_{2}}{2}\right)}\cdot\left(\frac{v_{1}}{v_{2}}\right)^{\frac{v_{1}}{2}}\cdot x^{\frac{v_{1}}{2}-1}\cdot\left(1+\frac{v_{1}}{v_{2}}\cdot x\right)^{-\frac{v_{1}+v_{2}}{2}
+
+funcao-densidade-probabilidade-variavel-aleatoria-distribuicao-normal
+f(x)=P(X=x)=\frac{1}{\sigma\sqrt{2\pi}}\cdot e^{-\frac{(x-\mu)^2}{2\cdot\sigma^2}}
+
+funcao-densidade-probabilidade-variavel-aleatoria-distribuicao-qui-quadrado
+f(x)=P(X=x)=\begin{cases}\frac{x^{\frac{v}{2}-1}\cdot e^{-\frac{x}{2}}}{2^{\frac{v}{2}}\cdot\Gamma\left(\frac{v}{2}\right)} &, x > 0\\0 &, x < 0\end{cases}
+
+funcao-densidade-probabilidade-variavel-aleatoria-distribuicao-t-student
+f(t)=P(X=t)=\frac{\Gamma\left(\frac{v+1}{2}\right)}{\Gamma\left(\frac{v}{2}\right)\cdot\sqrt{v\pi}}\cdot\left(1+\frac{t^2}{v}\right)^{-\frac{v+1}{2}}
+
+funcao-distribuicao-acumulada-variavel-aleatoria-continua
+F(x)=P(X\leq x)=\int_{-\infty}^x f(x)dx
+
+funcao-distribuicao-acumulada-variavel-aleatoria-discreta
+F(x)=P(X\leq x)=\sum_{x_{i}\leq x}^{}f(x_{i})
+
+funcao-massa-probabilidade-variavel-aleatoria-discreta
+f(x)=P(X=x)
+
+funcao-massa-probabilidade-variavel-aleatoria-distribuicao-binomial-negativa
+f(k)=P(X=k)=\binom{k+r-1}{r-1}\cdot (1-p)^{k}\cdot p^{r}
+
+funcao-massa-probabilidade-variavel-aleatoria-distribuicao-binomial
+f(k)=P(X=k)=\binom{n}{k}\cdot p^{k}\cdot (1-p)^{n-k}
+
+funcao-massa-probabilidade-variavel-aleatoria-distribuicao-geometrica
+f(k)=P(X=k)=(1-p)^{k-1}\cdot p
+
+funcao-massa-probabilidade-variavel-aleatoria-distribuicao-poisson
+f(k)=P(X=k)=\frac{\lambda^{k}\cdot e^{-\lambda}}{k!}
+
+notacao-variavel-aleatoria-distribuicao-binomial-negativa
+X\sim NB(r,p),r\in\mathbb{Z}_{+*},p\in[0,1]
+
+notacao-variavel-aleatoria-distribuicao-binomial
+X\sim B(n,p),n\in\mathbb{Z}_{+},p\in[0,1]
+
+notacao-variavel-aleatoria-distribuicao-f-snedecor
+X\sim F(v_{1}, v_{2}),v_{1}\in\mathbb{R}_{+*}, v_{2}\in\mathbb{R}_{+*}
+
+notacao-variavel-aleatoria-distribuicao-geometrica
+X\sim Geo(p),p\in[0,1]
+
+notacao-variavel-aleatoria-distribuicao-normal
+X\sim N(\mu,\sigma^2),\mu\in\mathbb{R},\sigma^2\in\mathbb{R}_{+*}
+
+notacao-variavel-aleatoria-distribuicao-poisson
+X\sim Poisson(\lambda),\lambda\in\mathbb{R}_{+*}
+
+notacao-variavel-aleatoria-distribuicao-qui-quadrado
+X\sim \chi^2(v),v\in\mathbb{R}_{+*}
+
+notacao-variavel-aleatoria-distribuicao-t-student
+X\sim t(v),v\in\mathbb{R}_{+*}
