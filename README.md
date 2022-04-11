@@ -18,4 +18,4 @@ Os conteúdos estudados estão sintetizados em _markdowns_ e _notebooks_.
 
 O arquivo [_graficos.ipynb_](graficos.ipynb) possui os _scripts_ utilizados para criação dos gráficos.
 
-O arquivo [_formulas.txt_](formulas.txt) possui as sintaxes LaTeX das fórmulas matemáticas.
+O arquivo [_formulas.txt_](formulas.txt) possui as sintaxes LaTeX das expressões matemáticas.
