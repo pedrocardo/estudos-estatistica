@@ -1,10 +1,6 @@
 # Estudos sobre estatística
 
-Esse repositório é elaborado a partir de estudos sobre estatística.
-
-## Conteúdos
-
-Os conteúdos estudados estão sintetizados em _markdowns_ e _notebooks_.
+Os estudos estão sintetizados em  _markdowns_ e _notebooks_:
 
 - _markdowns_
   - [Conceitos básicos](markdowns/conceitos-basicos.md)
