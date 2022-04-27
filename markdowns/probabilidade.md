@@ -1,26 +1,23 @@
-# Estatística probabilística
+# Probabilidade
 
-- [Experimento aleatório](#Experimento-aleatório)
-  - [Experimento de Bernoulli](#Experimento-de-Bernoulli)
-- [Espaço amostral](#Espaço-amostral)
-- [Evento](#Evento)
-  - [União](#união)
-  - [Intersecção](#Intersecção)
-  - [Complemento](#Complemento)
-- [Eventos mutualmente excludentes](#eventos-mutualmente-excludentes)
+- [Experimento aleatório](#experimento-aleatório)
+  - [Experimento de Bernoulli](#experimento-de-Bernoulli)
+- [Espaço amostral](#espaço-amostral)
+- [Evento](#evento)
+- [Espaço de eventos](#espaço-de-eventos)
 - [Função probabilidade](#função-probabilidade)
-- [Variável aleatória](#Variável-aleatória)
-  - [Função massa de probabilidade](#Função-massa-de-probabilidade)
-  - [Função densidade de probabilidade](#Função-densidade-de-probabilidade)
-  - [Função distribuição acumulada](#Função-distribuição-acumulada)
-- [Distribuições de probabilidade](#Distribuições-de-probabilidade)
-  - [Distribuição binomial](#Distribuição-binomial)
-  - [Distribuição binomial negativa](#Distribuição-binomial-negativa)
-  - [Distribuição de Poisson](#Distribuição-de-Poisson)
-  - [Distribuição normal](#Distribuição-normal)
-  - [Distribuição qui-quadrado](#Distribuição-qui-quadrado)
-  - [Distribuição t de Student](#Distribuição-t-de-student)
-  - [Distribuição F de Snedecor](#Distribuição-F-de-Snedecor)
+- [Variável aleatória](#variável-aleatória)
+  - [Função massa de probabilidade](#função-massa-de-probabilidade)
+  - [Função densidade de probabilidade](#função-densidade-de-probabilidade)
+  - [Função distribuição acumulada](#função-distribuição-acumulada)
+- [Distribuições de probabilidade](#distribuições-de-probabilidade)
+  - [Distribuição binomial](#distribuição-binomial)
+  - [Distribuição binomial negativa](#distribuição-binomial-negativa)
+  - [Distribuição de Poisson](#distribuição-de-Poisson)
+  - [Distribuição normal](#distribuição-normal)
+  - [Distribuição qui-quadrado](#distribuição-qui-quadrado)
+  - [Distribuição t de Student](#distribuição-t-de-student)
+  - [Distribuição F de Snedecor](#distribuição-F-de-Snedecor)
 
 ## Experimento aleatório
 
@@ -42,33 +39,17 @@ Esse conjunto é convencionalmente denotado por _Ω_; seus resultados, por _ω_.
 
 Evento é um subconjunto com resultados de um espaço amostral.
 
-### União
+## Espaço de eventos
 
-A união entre dois eventos _A_ e _B_ é definida por:
+Espaço de eventos é conjunto com todos os possíveis eventos.
 
-![definição da união entre dois eventos](/imagens/definicao-uniao-eventos.png)
-
-### Intersecção
-
-A intersecção entre dois eventos _A_ e _B_ é definida por:
-
-![definição da intersecção entre dois eventos](/imagens/definicao-interseccao-eventos.png)
-
-### Complemento
-
-O complemento de um evento _A_ é denotado por _Aᶜ_ e definido por:
-
-![definição do complemento de um evento](/imagens/definicao-complemento-evento.png)
-
-## Eventos mutualmente excludentes
-
-Eventos mutualmente excludentes são eventos sem resultados em comum.
-
-![definição de eventos mutualmente excludentes](/imagens/definicao-eventos-mutualmente-excludentes.png)
+Esse conjunto é convencionalmente denotado por _𝓕_.
 
 ## Função probabilidade
 
-Função probabilidade é uma função que associa um número real para cada evento de um espaço amostral.
+Função probabilidade é uma função que associa um número real para cada evento de um espaço de eventos.
+
+![definição função probabilidade](/imagens/definicao-funcao-probabilidade.png)
 
 Para cada evento _A_, uma função probabilidade deve satisfazer o seguinte axioma:
 
@@ -88,7 +69,7 @@ A probabilidade de um evento pode assumir qualquer número real maior ou igual a
 
 Variável aleatória é uma função que associa um número real para cada resultado de um espaço amostral.
 
-![definição de uma variável aleatória](/imagens/definicao-variavel-aleatoria.png)
+![definição variável aleatória](/imagens/definicao-variavel-aleatoria.png)
 
 Variáveis aleatórias podem ser classificadas como:
 

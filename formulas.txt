@@ -7,17 +7,8 @@ P(\Omega)=1
 axioma-funcao-probabilidade-3
 P\left(\bigcup\limits_{i=1}^{\infty}A_{i}\right)=\sum_{i=1}^{\infty}P(A_i)
 
-definicao-complemento-evento
-A^c=\{\omega\in\Omega:\omega\notin A\}
-
-definicao-eventos-mutualmente-excludentes
-A\cap B=\emptyset
-
-definicao-interseccao-eventos
-A\cap B=\{\omega\in\Omega:\omega\in A\wedge\omega\in B\}
-
-definicao-uniao-eventos
-A\cup B=\{\omega\in\Omega:\omega\in A\vee\omega\in B\}
+definicao-funcao-probabilidade
+P:\mathcal{F}\rightarrow [0,1]
 
 definicao-variavel-aleatoria
 X:\Omega\rightarrow\mathbb{R}
