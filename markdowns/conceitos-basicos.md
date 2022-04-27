@@ -1,14 +1,14 @@
 # Conceitos básicos
 
-- [População](#População)
-- [Amostra](#Amostra)
-- [Variável](#Variável)
-  - [Variável quantitativa](#Variável-quantitativa)
-  - [Variável qualitativa](#Variável-qualitativa)
-- [Dado](#Dado)
-- [_Outlier_](#Outlier)
-- [Parâmetro](#Parâmetro)
-- [Estatística](#Estatística)
+- [População](#população)
+- [Amostra](#amostra)
+- [Variável](#variável)
+  - [Variável quantitativa](#variável-quantitativa)
+  - [Variável qualitativa](#variável-qualitativa)
+- [Dado](#dado)
+- [_Outlier_](#outlier)
+- [Parâmetro](#parâmetro)
+- [Estatística](#estatística)
 
 ## População
 
