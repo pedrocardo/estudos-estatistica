@@ -16,6 +16,7 @@
   - [Para uma amostra](#para-uma-amostra)
   - [Para duas amostras independentes](#para-duas-amostras-independentes)
 - [Teste t de Welch](#teste-t-de-Welch)
+- [Teste de independência qui-quadrado](#teste-de-independência-qui-quadrado)
 
 ## Amostragem
 
@@ -104,11 +105,11 @@ Para uma amostra, o teste t de Student assume como hipótese nula: _μ_ - _μ₀
 
 A fórmula da estatística de teste é dada por:
 
-![fórmula da estatística de teste t de Student para uma amostra](/imagens/formula-estatistica-teste-t-student-uma-amostra.png)
+![fórmula da estatística do teste t de Student para uma amostra](/imagens/formula-estatistica-teste-t-student-uma-amostra.png)
 
 O _p-value_ da estatística de teste é calculado a partir de uma distribuição t de Student com:
 
-![fórmula dos graus de liberdade do teste t de Student para uma amostra](/imagens/formula-graus-liberdade-teste-t-student-uma-amostra.png)
+![fórmula dos graus de liberdade para teste t de Student para uma amostra](/imagens/formula-graus-liberdade-teste-t-student-uma-amostra.png)
 
 O teste t de Student pode assumir as seguintes hipóteses alternativas:
 
@@ -122,13 +123,13 @@ Para duas amostras independentes de populações com variâncias homogêneas, o 
 
 A fórmula da estatística de teste é dada por:
 
-![primeira parte da fórmula estatística de teste t de Student para duas amostras independentes](/imagens/formula-estatistica-teste-t-student-duas-amostras-independentes-1.png)
+![primeira parte da fórmula estatística do teste t de Student para duas amostras independentes](/imagens/formula-estatistica-teste-t-student-duas-amostras-independentes-1.png)
 
-![segunda parte da fórmula estatística de teste t de Student para duas amostras independentes](/imagens/formula-estatistica-teste-t-student-duas-amostras-independentes-2.png)
+![segunda parte da fórmula estatística do teste t de Student para duas amostras independentes](/imagens/formula-estatistica-teste-t-student-duas-amostras-independentes-2.png)
 
 O _p-value_ da estatística de teste é calculado a partir de uma distribuição t de Student com:
 
-![fórmula dos graus de liberdade do teste t de Student para duas amostras independentes](/imagens/formula-graus-liberdade-teste-t-student-duas-amostras-independentes.png)
+![fórmula dos graus de liberdade para teste t de Student para duas amostras independentes](/imagens/formula-graus-liberdade-teste-t-student-duas-amostras-independentes.png)
 
 O teste t de Student pode assumir as seguintes hipóteses alternativas:
 
@@ -144,14 +145,38 @@ Esse teste assume como hipótese nula: _μ₁_ - _μ₂_ = 0.
 
 A fórmula da estatística de teste é dada por:
 
-![fórmula da estatística de teste t de Welch](/imagens/formula-estatistica-teste-t-welch.png)
+![fórmula da estatística do teste t de Welch](/imagens/formula-estatistica-teste-t-welch.png)
 
 O _p-value_ da estatística de teste é calculado a partir de uma distribuição t de Student com:
 
-![fórmula dos graus de liberdade do teste t de Welch](/imagens/formula-graus-liberdade-teste-t-de-welch.png)
+![fórmula dos graus de liberdade para o teste t de Welch](/imagens/formula-graus-liberdade-teste-t-welch.png)
 
 O teste t de Welch pode assumir as seguintes hipóteses alternativas:
 
 - _μ₁_ - _μ₂_ < 0 para um teste unilateral à esquerda;
 - _μ₁_ - _μ₂_ > 0 para um teste unilateral à direita;
 - _μ₁_ - _μ₂_ ≠ 0 para um teste bilateral.
+
+## Teste de independência qui-quadrado
+
+Teste de independência qui-quadrado de avalia a associação entre duas variáveis qualitativas.
+
+A fórmula da estatística de teste é dada por:
+
+![fórmula da estatística do teste de independência qui-quadrado](/imagens/formula-estatistica-teste-independencia-qui-quadrado.png)
+
+O _p-value_ da estatística de teste é calculado a partir de uma distribuição qui-quadrado com:
+
+![fórmula dos graus de liberdade para o teste de independência qui-quadrado](/imagens/formula-graus-liberdade-teste-independência-qui-quadrado.png)
+
+Nas fórmulas acima:
+
+- _Oᵢⱼ_ representa as frequências conjuntas observadas das categorias _i_ e _j_;
+- _Eᵢⱼ_ representa as frequências conjuntas esperadas das categorias _i_ e _j_ considerando as variáveis como independentes.
+- _I_ representa a quantidade de categorias da primeira variável;
+- _J_ representa a quantidade de categorias da segunda variável.
+
+O teste qui-quadrado assume, respectivamente, como hipótese nula e hipótese alternativa:
+
+- as variáveis são independentes;
+- as variáveis não são independentes.
