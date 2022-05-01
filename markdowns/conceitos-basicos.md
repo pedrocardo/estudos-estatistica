@@ -9,10 +9,11 @@
 - [_Outlier_](#outlier)
 - [Parâmetro](#parâmetro)
 - [Estatística](#estatística)
+- [Viés](#viés)
 
 ## População
 
-População é um conjunto de elementos ou indivíduos com características em comum.
+População é um conjunto de elementos ou indivíduos similares em um estudo.
 
 ## Amostra
 
@@ -64,3 +65,7 @@ Parâmetro é uma medida de uma população.
 ## Estatística
 
 Estatística é uma medida de uma amostra.
+
+## Viés
+
+Viés é uma tendência sistemática que causa diferença entre o valor estimado e o real de um parâmetro.
