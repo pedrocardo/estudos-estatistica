@@ -165,7 +165,7 @@ A fórmula da estatística de teste é dada por:
 
 O _p-value_ da estatística de teste é calculado a partir de uma distribuição qui-quadrado com:
 
-![fórmula dos graus de liberdade para o teste de independência qui-quadrado](/imagens/formula-graus-liberdade-teste-independência-qui-quadrado.png)
+![fórmula dos graus de liberdade para o teste de independência qui-quadrado](/imagens/formula-graus-liberdade-teste-independencia-qui-quadrado.png)
 
 Nas fórmulas acima:
 
