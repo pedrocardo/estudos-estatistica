@@ -48,8 +48,6 @@ Estatística de teste é uma medida utilizada para testar a hipótese nula.
 
 _p-value_ é a probabilidade de obter-se um valor igual ou mais extremo que o calculado para a estatística de teste.
 
-Essa probabilidade é calculada a partir da distribuição da estatística de teste.
-
 ### Tipos de erros
 
 A avaliação das hipóteses nula e alternativa pode resultar em dois tipos de erros.
