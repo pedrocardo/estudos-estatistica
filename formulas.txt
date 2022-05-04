@@ -13,6 +13,21 @@ P:\mathcal{F}\rightarrow [0,1]
 definicao-variavel-aleatoria
 X:\Omega\rightarrow\mathbb{R}
 
+equacao-modelo-regressao-linear-multipla-fitted-values
+\hat{y}_{i}=\beta_{0}+\beta_{1}\cdot x_{1i}+...+\beta_{p}\cdot x_{pi}
+
+equacao-modelo-regressao-linear-multipla
+y_{i}=\beta_{0}+\beta_{1}\cdot x_{1i}+...+\beta_{p}\cdot x_{pi}+\epsilon_{i}
+
+equacao-modelo-regressao-linear-simples-fitted-values
+\hat{y}_{i}=\beta_{0}+\beta_{1}\cdot x_{i}
+
+equacao-modelo-regressao-linear-simples
+y_{i}=\beta_{0}+\beta_{1}\cdot x_{i}+\epsilon_{i}
+
+equacao-modelo-regressao-linear-variavel-dependente
+x_{k}=\beta_{0}+\beta_{1}\cdot x_{1i}+...+\beta_{k-1}\cdot x_{k-1i}+\epsilon_{i}
+
 formula-amplitude-interquartil
 AIQ=Q_{3}-Q_{1}
 
@@ -40,8 +55,14 @@ formula-desvio-padrao-populacional
 formula-erro-padrao-media-amostral
 SE_{\bar{x}}=\frac{s}{\sqrt{n}}
 
+formula-estatistica-teste-f-regressao-linear
+F=\frac{\frac{\sum_{i=1}^{n}(\hat{y}_{i}-\bar{y})^2}{(k-1)}}{\frac{\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^2}{(n-k)}}
+
 formula-estatistica-teste-independencia-qui-quadrado
 \chi^2=\sum_{i=1}^{I}\sum_{j=1}^{J}\frac{(O_{ij}-E_{ij})^2}{E_{ij}}
+
+formula-estatistica-teste-shapiro-wilk
+W=\frac{(\sum_{i=1}^{n} a_{i}x_{(i)})^2}{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}
 
 formula-estatistica-teste-t-student-duas-amostras-independentes-1
 t=\frac{(\bar x_{1}-\bar x_{2})}{s_{p}\cdot\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}}
@@ -49,11 +70,23 @@ t=\frac{(\bar x_{1}-\bar x_{2})}{s_{p}\cdot\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}
 formula-estatistica-teste-t-student-duas-amostras-independentes-2
 s_{p}=\sqrt\frac{(n_{1}-1)\cdot s_{1}^2+(n_{2}-1)\cdot s_{2}^2}{n_{1}+n_{2}-2}
 
+formula-estatistica-teste-t-student-regressao-linear
+t=\frac{\beta_{p}}{SE_{\beta_{p}}}
+
 formula-estatistica-teste-t-student-uma-amostra
 t=\frac{\bar x-\mu_{0}}{s/\sqrt n}
 
 formula-estatistica-teste-t-welch
 t=\frac{(\bar x_{1}-\bar x_{2})}{\sqrt{\frac{s_{1}^2}{n_{1}}+\frac{s_{2}^2}{n_{2}}}}
+
+formula-graus-liberdade-distribuicao-f-snedecor-denominador
+v_{2}=n-k
+
+formula-graus-liberdade-distribuicao-f-snedecor-numerador
+v_{1}=k-1
+
+formula-graus-liberdade-distribuicao-t-student
+v=n-k
 
 formula-graus-liberdade-teste-independencia-qui-quadrado
 v=(I-1)\cdot(J-1)
@@ -91,11 +124,35 @@ Pos(Q_{i})=\left(\frac{n \cdot i}{4}\right)+\frac{1}{2}
 formula-probabilidade-ocorrencia-evento
 p(evento)=\frac{n\acute{u}mero\;de\;resultados\;do\;evento}{n\acute{u}mero\;de\;resultados\;do\;espa\c{c}o\;amostral}
 
+formula-parametro-beta-0-modelo-regressao-linear-simples
+\hat{\beta}_{0}=\bar{y}-\hat{\beta}_{1}\cdot\bar{x}
+
+formula-parametro-beta-1-modelo-regressao-linear-simples
+\hat{\beta}_{1}=\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})\cdot(y_{i}-\bar{y})}{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}
+
+formula-r-quadrado-ajustado
+R_{a}^2=1-\frac{n-1}{n-p-1}\cdot(1-R^2)
+
+formula-r-quadrado
+R^2=1-\frac{\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^2}{\sum_{i=1}^{n}(y_{i}-\bar{y}_{i})^2}
+
+formula-residuos
+\epsilon_{i}=y_{i}-\hat{y}_{i}
+
+formula-soma-quadrados-residuos
+SSR=\sum_{i=1}^{n}\hat{\epsilon}_{i}^2=\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^2
+
+formula-variance-inflation-factor
+VIF=\frac{1}{1-R_{k}^2}
+
 formula-variancia-amostral
 s^2=\frac{\sum_{i=1}^{n}(x_{i}-\bar{x})^2}{n-1}
 
 formula-variancia-populacional
 \sigma^2=\frac{\sum_{i=1}^{N}(X_{i}-\mu)^2}{N}
+
+formula-vetor-parametros-modelo-regressao-linear
+\hat{\beta}=(X^{T}X)^{-1}(X^{T}Y)
 
 formula-zscore-amostral
 Z_{i}=\frac{x_{i}-\bar_{x}}{s}
@@ -138,6 +195,12 @@ f(k)=P(X=k)=(1-p)^{k-1}\cdot p
 
 funcao-massa-probabilidade-variavel-aleatoria-distribuicao-poisson
 f(k)=P(X=k)=\frac{\lambda^{k}\cdot e^{-\lambda}}{k!}
+
+notacao-matricial-modelo-regressao-linear-1
+y=x\beta+\epsilon
+
+notacao-matricial-modelo-regressao-linear-2
+y=\begin{bmatrix}y_{1}\\y_{2}\\...\\y_{n}\end{bmatrix},x=\begin{bmatrix}1&x_{11}&x_{12}&...&x_{1p}\\1&x_{21}&x_{22}&...&x_{2p}\\...\\1&x_{n1}&x_{n2}&...&x_{np}\end{bmatrix},\beta=\begin{bmatrix}\beta_{0}\\\beta_{1}\\...\\\beta_{p}\end{bmatrix},\epsilon=\begin{bmatrix}\epsilon_{1}\\\epsilon_{2}\\...\\\epsilon_{n}\end{bmatrix}
 
 notacao-variavel-aleatoria-distribuicao-binomial-negativa
 X\sim NB(r,p),r\in\mathbb{Z}_{+*},p\in[0,1]
